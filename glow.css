@@ -1,53 +1,22 @@
-/* opensource color from the s9a.page/sea */
-:root { --sea-oil:seashell; --sea-ink:#000 }
-.sea-amber { --sea-oil: salmon }
-.sea-blush { --sea-oil: pink }
-.sea-breeze { --sea-oil: mistyrose }
-.sea-foam { --sea-oil: darkturquoise }
-.sea-fume { --sea-oil: hotpink }
-.sea-gel { --sea-oil: mediumslateblue }
-.sea-glow { --sea-oil: gold }
-.sea-gush { --sea-oil: violet }
-.sea-lava { --sea-oil: rosybrown }
-.sea-sand { --sea-oil: navajowhite }
-.sea-storm { --sea-oil: gainsboro }
-.sea-tide { --sea-oil: deepskyblue }
-@media (prefers-contrast: less) {
-  :root { --sea-ink:#111 }
-  .sea-blush { --sea-oil: lightpink }
-  .sea-breeze { --sea-oil: bisque }
-  .sea-fume { --sea-oil: mediumorchid }
-  .sea-sand { --sea-oil: peachpuff }
-  .sea-storm { --sea-oil: silver }
-  .sea-tide { --sea-oil: dodgerblue }
-}
-@media (prefers-contrast: more) {
-  .sea-amber { --sea-oil: coral }
-  .sea-foam { --sea-oil: turquoise }
-  .sea-gel { --sea-oil: mediumpurple }
-  .sea-glow { --sea-oil: #ee1 }
-  .sea-gush { --sea-oil: plum }
-  .sea-lava { --sea-oil: tan }
-}
-.sea-wet :not(.sea-dry) {
-  background-color: none;
-  color: inherit;
-}
-.sea-wet ::selection {
-  background-color: indigo;
-  color: salmon;
-}
-.sea-blood.sea-blood {
-  background-color: var(--sea-oil);
-  color: var(--sea-ink);
-}
-.sea-bleed.sea-bleed {
-  background-color: var(--sea-ink);
-  color: var(--sea-oil);
-}
-@media (prefers-color-scheme:light) {
-  .sea-bleed.sea-blood {
-    background-color: var(--sea-oil);
-    color: var(--sea-ink);
-  }
+/* opensource color via s9a.page/cab */
+
+.cab-wet * { background: none; color: inherit }
+.cab-am { background: var(--cab-oil) !important; color: var(--cab-ink) !important }
+.cab-pm { background: var(--cab-ink) !important; color: var(--cab-oil) !important }
+.cab-ave { --cab-oil: moccasin; --cab-ink: #212 }
+.cab-sun { --cab-oil: lemonchiffon; --cab-ink: #212 }
+.cab-sup { --cab-oil: papayawhip; --cab-ink: #718 }
+.cab-curb { --cab-oil: #cab; --cab-ink: #212 }
+.cab-river { --cab-oil: powderblue; --cab-ink: #718 }
+.cab-fresh { --cab-oil: chartreuse; --cab-ink: #646 }
+.cab-rush { --cab-oil: mistyrose; --cab-ink: #917 }
+.cab-gush { --cab-oil: seashell; --cab-ink: #929 }
+.cab-park { --cab-oil: powderblue; --cab-ink: #332 }
+.cab-wave { --cab-oil: seashell; --cab-ink: #347 }
+.cab-heat { --cab-oil: hotpink; --cab-ink: #212 }
+.cab-flag { --cab-oil: salmon; --cab-ink: indigo }
+
+::selection {
+  color: moccasin;
+  background: blueviolet;
 }

@@ -1,4 +1,3 @@
-# [index](index.html)
+* [arti*fish* mural](https://webmural.com/artifish)
+* [shadow swush](https://webmural.com/artifish#eos)
 
-* [HTML](https://webmural.com/html)
-* [CSS](https://webmural.com/css)

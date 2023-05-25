@@ -1,43 +1,48 @@
+:link {
+  text-decoration-line: overline;
+}
+
 :focus {
+  box-shadow: 0 0 1ex 1ex;
   outline: thick double;
+  text-decoration-style: dashed;
+  text-decoration-line: line-through;
+}
+
+:hover {
+  text-decoration-style: double;
 }
 
 html {
   font-family: sans-serif;
-  font-size: calc(1em + 1vw + 1vh);
-}
-
-.unity {
-  box-sizing: border-box;
-  display: flex;
-  flex-flow: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.unified {
-  align-self: center;
-  position: relative;
-  padding: 1em;
-  flex-basis: 100%;
-  min-height: 20vh;
-}
-
-.unified p {
-  margin: auto;
-  position: absolute;
-  bottom: 38%;
+  font-size: max(2em, 2vmax + 3vmin);
+  line-height: calc(10 / 6);
 }
 
 body {
-  margin: 0;
+  margin: 1ex auto;
+  overflow-wrap: anywhere;
 }
 
-sup {
-  font-size: 1.61em;
+article {
+  contain: layout;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.voz {
+:target article {
+  flex-wrap: nowrap;
+}
+
+p {
+  box-sizing: border-box;
+  contain: layout;
+  flex-basis: 100%;
+  margin: auto;
+  padding: 1em;
+}
+
+h1 {
+  contain: strict;
   font-size: 0;
 }
